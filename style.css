@@ -7,7 +7,7 @@
 .container {
     outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1140px;
     /* 📍 Максимальная ширина для контейнера */
 }
 
@@ -40,8 +40,9 @@ header span {
 .main-section .wrapper {
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+
 }
 
 .text-wrapper {
@@ -75,6 +76,7 @@ header span {
     flex-wrap: wrap;
     justify-content:space-between;
     align-items:center;
+    gap: 60px;
 }
 
 select {
@@ -133,7 +135,7 @@ select:hover,
 .skills-block{
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     
 }
